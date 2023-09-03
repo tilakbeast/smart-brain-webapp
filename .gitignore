@@ -7,3 +7,5 @@
 # Ignore compiled binaries
 *.exe
 *.dll
+
+*smart-brain-api
