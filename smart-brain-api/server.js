@@ -40,6 +40,6 @@ app.post('/signin', (req, res) => {handleSignin(req, res, bcrypt, db)});
 app.post('/register', (req, res) => {handleRegister(req, res, bcrypt, db)});
 
 
-app.listen(3001, () => {
-    console.log('app is working');
+app.listen(process.env.PORT || 3001, () => {
+    console.log(`app is working on ${process.env.PORT}`);
 });
