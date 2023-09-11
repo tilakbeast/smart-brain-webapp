@@ -26,14 +26,13 @@ app.use(cors());
 
 
 app.get('/', (req, res) => {
-    res.send(database.users)
+    res.send("it's working")
 });
 
 // app.get('/profile/:id', (req, res) => {handleProfile(req, res, db)});
 
 app.put('/image', (req, res) => {handleImage(req, res, db)});
 app.post('/imageurl', (req, res) => {handleApiCall(req, res)});
-
 
 app.post('/signin', (req, res) => {handleSignin(req, res, bcrypt, db)});
 
