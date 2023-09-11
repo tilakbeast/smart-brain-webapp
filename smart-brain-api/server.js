@@ -25,9 +25,9 @@ app.use(cors());
 
 
 
-// app.get('/', (req, res) => {
-//     res.send(database.users)
-// });
+app.get('/', (req, res) => {
+    res.send(database.users)
+});
 
 // app.get('/profile/:id', (req, res) => {handleProfile(req, res, db)});
 
