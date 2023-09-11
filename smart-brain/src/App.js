@@ -117,7 +117,7 @@ class App extends Component {
     //   version: "34ce21a40cc24b6b96ffee54aabff139",
     // }, this.state.input)
 
-    fetch('http://localhost:3001/imageurl', {
+    fetch('https://smart-brain-orlf.onrender.com/imageurl', {
 
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
@@ -131,7 +131,7 @@ class App extends Component {
       .then(response => {
 
         if (response) {
-          fetch('http://localhost:3001/image', {
+          fetch('https://smart-brain-orlf.onrender.com/image', {
 
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
