@@ -16,8 +16,10 @@ const db = knex({
         port: 5432,
         user: 'smart_brain_w2i2_user',
         password: 'XPuY5hCaH9ynBNdHSxkxJjtlAFnC301v',
-        database: 'smart_brain_w2i2'
+        database: 'smart_brain_w2i2',
+        ssl: "true"
     }
+
 });
 
 app.use(express.json());
