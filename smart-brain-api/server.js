@@ -26,7 +26,7 @@ app.use(cors());
 
 app.get('/', (req, res) => {
     db.select('*').from('users')
-    .then(res.json(data))
+    .then(data => res.json(data))
     .catch(err => res.status(404).json("can't fetch"))
 });
 
