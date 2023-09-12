@@ -24,9 +24,10 @@ app.use(express.json());
 app.use(cors());
 
 
-
 app.get('/', (req, res) => {
-    res.send("it's working")
+    db.select('*').from('users')
+    .then(res.json(data))
+    .catch(err => res.status(404).json("can't fetch"))
 });
 
 // app.get('/profile/:id', (req, res) => {handleProfile(req, res, db)});
