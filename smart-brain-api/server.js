@@ -10,13 +10,13 @@ const { handleProfile } = require('./controllers/profile');
 
 const db = knex({
 
-    client: 'mysql2',
+    client: 'pg',
     connection: {
-        host: '127.0.0.1',
-        port: 3306,
-        user: 'root',
-        password: 'Tilak884%',
-        database: 'smart_brain'
+        host: 'dpg-cjvkblnhdsdc73fjtdug-a.oregon-postgres.render.com',
+        port: 5432,
+        user: 'smart_brain_w2i2_user',
+        password: 'XPuY5hCaH9ynBNdHSxkxJjtlAFnC301v',
+        database: 'smart_brain_w2i2'
     }
 });
 
