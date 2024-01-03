@@ -12,11 +12,13 @@ const db = knex({
 
     client: 'pg',
     connection: {
-        host: 'dpg-cjvkblnhdsdc73fjtdug-a.oregon-postgres.render.com',
+        // host: 'dpg-cjvkblnhdsdc73fjtdug-a.oregon-postgres.render.com',
+        host: 'dpg-cmappaq1hbls73cn1sgg-a.oregon-postgres.render.com',
+        // 0UxogwpnAeITgx2z4kWdOHWmGcbHXDxL@dpg-cmappaq1hbls73cn1sgg-a.oregon-postgres.render.com/smart_brain_v7ry
         port: 5432,
-        user: 'smart_brain_w2i2_user',
-        password: 'XPuY5hCaH9ynBNdHSxkxJjtlAFnC301v',
-        database: 'smart_brain_w2i2',
+        user: 'smart_brain_v7ry_user',
+        password: '0UxogwpnAeITgx2z4kWdOHWmGcbHXDxL',
+        database: 'smart_brain_v7ry',
         ssl: "true"
     }
 
