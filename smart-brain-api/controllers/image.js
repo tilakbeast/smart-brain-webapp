@@ -23,6 +23,7 @@ const handleImage = (req, res, db) => {
         .then(() => {
             db('users').where({ id: id }).select('entries').then(ent => res.json(ent[0].entries))
         })
+
         .catch(err => res.status(404).json(err));
 }
 
