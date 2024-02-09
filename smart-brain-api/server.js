@@ -28,7 +28,7 @@ app.use(cors());
 
 app.get('/', (req, res) => {
     db.select('*').from('users')
-    .then(data => res("working"))
+    .then(data => res.send("working"))
     .catch(err => res.status(404).json(err))
 });
 
